@@ -4,8 +4,8 @@
 using namespace std;
 
 int main () {
-    string invocador, name, namee, nameee;
-    int kill, killl, killll, mor, morr, morrr, assis, assiss, assisss, kda, kdaa, kdaaa;
+    string invocador, name, name2, name3;
+    int kill, kill2, kill3, mor, mor2, mor3, assis, assis2, assis3, kda, kda2, kda3;
     char nov;
 
     inicio:
@@ -28,41 +28,41 @@ int main () {
 
     //Segundo campeao e os dados para calcular o KDA
     cout << "Digite o segundo campeao: " << endl;
-    cin >> namee;
-    cout << "Digita seu numero de abates com o campeao: " << namee << endl;
-    cin >> killl;
-    cout << "Digite seu numero de mortes com o campeao: " << namee << endl;
-    cin >> morr;
-    cout << "Digite seu numero de assistencias com o campeao: " << namee << endl;
-    cin >> assiss;
+    cin >> name2;
+    cout << "Digita seu numero de abates com o campeao: " << name2 << endl;
+    cin >> kill2;
+    cout << "Digite seu numero de mortes com o campeao: " << name2 << endl;
+    cin >> mor2;
+    cout << "Digite seu numero de assistencias com o campeao: " << name2 << endl;
+    cin >> assis2;
 
     //Terceiro campeao e os dados para calcular o KDA
-    cout << "Digite o terceiro campeao: " << nameee << endl;
-    cin >> nameee;
-    cout << "Digite seu numero de abates com o campeao: " << nameee << endl;
-    cin >> killll;
-    cout << "Digite seu numero de mortes com o campeao: " << nameee << endl;
-    cin >> morrr;
-    cout << "Digite seu numero de assistencias com o campeao: " << assisss << endl;
-    cin >> assisss;
+    cout << "Digite o terceiro campeao: " << name3 << endl;
+    cin >> name3;
+    cout << "Digite seu numero de abates com o campeao: " << name3 << endl;
+    cin >> kill3;
+    cout << "Digite seu numero de mortes com o campeao: " << name3 << endl;
+    cin >> mor3;
+    cout << "Digite seu numero de assistencias com o campeao: " << name3 << endl;
+    cin >> assis3;
 
     kda= kill + assis / mor;
-    kdaa= killl + assiss/ mor;
-    kdaaa=  killll + assisss/ mor;
+    kda2= kill2 + assis2/ mor2;
+    kda3=  kill3 + assis3/ mor3;
 
     //Resultado da conta
-    if (kda > kdaa && kda > kdaaa){
+    if (kda > kda2 && kda > kda3){
       cout << "Invocador: " << invocador << endl;
       cout << "Seu melhor campeao foi o(a): " << name << endl;
       cout << "Com o KDA de: " << kda << endl;
-    }else if (kdaa > kda && kdaa > kdaaa){
+    }else if (kda2 > kda && kda2 > kda3){
       cout << "Invocador: " << invocador << endl;
-      cout << "Seu melhor campeao foi o(a) " << namee << endl;
-      cout << "Com o KDA de: " << kdaa << endl;
+      cout << "Seu melhor campeao foi o(a) " << name2 << endl;
+      cout << "Com o KDA de: " << kda2 << endl;
     }else{
       cout << "Invocador " << invocador << endl;
-      cout << "Seu melhor campeao foi o(a) " << nameee << endl;
-      cout << "Com o KDA de: " << kdaaa << endl;
+      cout << "Seu melhor campeao foi o(a) " << name3 << endl;
+      cout << "Com o KDA de: " << kda3 << endl;
     }
     cout << "Curtiu e quer ver com outros campeoes? Digite [s] pra continuar ou [n] para fechar o programa" << endl;
     cin >> nov;
